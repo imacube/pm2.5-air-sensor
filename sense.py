@@ -70,21 +70,21 @@ def main(csv_writer):
 
         csv_writer.writerow(frame)
 
-        print("Concentration Units (standard)")
-        print("---------------------------------------")
-        print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
-              (pm10_standard, pm25_standard, pm100_standard))
-        print("Concentration Units (environmental)")
-        print("---------------------------------------")
-        print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (pm10_env, pm25_env, pm100_env))
-        print("---------------------------------------")
-        print("Particles > 0.3um / 0.1L air:", particles_03um)
-        print("Particles > 0.5um / 0.1L air:", particles_05um)
-        print("Particles > 1.0um / 0.1L air:", particles_10um)
-        print("Particles > 2.5um / 0.1L air:", particles_25um)
-        print("Particles > 5.0um / 0.1L air:", particles_50um)
-        print("Particles > 10 um / 0.1L air:", particles_100um)
-        print("---------------------------------------")
+        # print("Concentration Units (standard)")
+        # print("---------------------------------------")
+        # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
+        #       (pm10_standard, pm25_standard, pm100_standard))
+        # print("Concentration Units (environmental)")
+        # print("---------------------------------------")
+        # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (pm10_env, pm25_env, pm100_env))
+        # print("---------------------------------------")
+        # print("Particles > 0.3um / 0.1L air:", particles_03um)
+        # print("Particles > 0.5um / 0.1L air:", particles_05um)
+        # print("Particles > 1.0um / 0.1L air:", particles_10um)
+        # print("Particles > 2.5um / 0.1L air:", particles_25um)
+        # print("Particles > 5.0um / 0.1L air:", particles_50um)
+        # print("Particles > 10 um / 0.1L air:", particles_100um)
+        # print("---------------------------------------")
 
         buffer = buffer[32:]
         # print("Buffer ", buffer)
