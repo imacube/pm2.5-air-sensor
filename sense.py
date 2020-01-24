@@ -1,4 +1,5 @@
 import csv
+import time
 
 try:
     import struct
@@ -87,6 +88,8 @@ def main(csv_writer):
 
         buffer = buffer[32:]
         # print("Buffer ", buffer)
+
+        time.sleep(10)
 
 
 if __name__ == '__main__':
