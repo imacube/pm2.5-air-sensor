@@ -14,13 +14,11 @@ except ImportError:
 # For use with Raspberry Pi/Linux:
 import serial
 
-uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=0.25)
 
 # For use with USB-to-serial cable:
 # import serial
 # uart = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=0.25)
 
-buffer = []
 
 
 def main(csv_writer):
@@ -29,6 +27,9 @@ def main(csv_writer):
     :param csv_writer:
     :return:
     """
+
+    buffer = []
+    uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=0.25)
 
     while True:
         data = uart.read(32)  # read up to 32 bytes
