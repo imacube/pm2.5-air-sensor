@@ -22,10 +22,10 @@ import serial
 
 
 
-def main(csv_file):
+def main(csv_writer):
     """Called when run as a script.
 
-    :param csv_file:
+    :param csv_writer:
     :return:
     """
 
@@ -68,7 +68,6 @@ def main(csv_file):
             buffer = []
             continue
 
-        csv_writer = csv.writer(csvfile)
         csv_writer.writerow(frame)
 
         # print("Concentration Units (standard)")
@@ -95,4 +94,4 @@ def main(csv_file):
 
 if __name__ == '__main__':
     with open('pm.csv', 'a') as csvfile:
-        main(csv_file=csvfile)
+        main(csv_writer=csv.writer(csvfile))
