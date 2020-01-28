@@ -69,6 +69,7 @@ def main(csv_writer):
             continue
 
         csv_writer.writerow(frame)
+        print(frame)
 
         # print("Concentration Units (standard)")
         # print("---------------------------------------")
@@ -89,7 +90,8 @@ def main(csv_writer):
         buffer = buffer[32:]
         # print("Buffer ", buffer)
 
-        time.sleep(10)
+        # todo Find URL with information about update cycle being every 2.3 or 2.6 seconds
+        time.sleep(3)
 
 
 if __name__ == '__main__':
