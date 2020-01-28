@@ -90,7 +90,8 @@ def main(csv_writer):
         buffer = buffer[32:]
         # print("Buffer ", buffer)
 
-        # todo Find URL with information about update cycle being every 2.3 or 2.6 seconds
+        # Unless rapid change is happening the update interval is typically 2.3 seconds
+        # https://learn.adafruit.com/pm25-air-quality-sensor/usage-notes
         time.sleep(3)
 
 

@@ -7,7 +7,12 @@ Basic code to run this on a Raspberry Pi and record the data to a CSV file. All 
 
 The PM2.5 sensor uses 5V DC. 
 
-Use the Raspberry Pi 5V and GND pins accordingly. Connect TXD on the sensor to the Raspberry Pi pin GPIO 15 (RXD).  
+Use the Raspberry Pi 5V and GND pins accordingly. Connect TXD on the sensor to the Raspberry Pi pin GPIO 15 (RXD). These
+three pins are all in the same row. Verify that the Pi board being used has this format before connecting anything:
+
+**5V**, 5V, **Gnd**, GPIO 14 (TXD), **GPIO 15 (RXD)**
+
+So starting with the first 5V pin, just connect to every other pin. But again, *verify the pins on your Raspberry Pi!* 
 
 # Data
     
@@ -20,12 +25,15 @@ This data is used for manufacturer calibration and should not be used as a repre
 
 ## *_environment
 
-TBD
+Environmental readings.
 
-## particiles_*
+## particles_*
 
-TBD
+Ambient readings.
 
 # References:
-* https://learn.adafruit.com/pm25-air-quality-sensor
-* https://www.adafruit.com/product/3686
+* [Adafruit Learning page](https://learn.adafruit.com/pm25-air-quality-sensor)
+* [Adafruit Usage Notes for device, useful details on data output](https://learn.adafruit.com/pm25-air-quality-sensor/usage-notes)
+* [Adafruit Product Page](https://www.adafruit.com/product/3686)
+* [Adafruit Forum about PM2.5 Units](https://forums.adafruit.com/viewtopic.php?f=19&t=135496)
+* [Forum post that was used for Usage Notes above](https://forums.adafruit.com/viewtopic.php?f=48&t=136528&p=767725#p767725)
