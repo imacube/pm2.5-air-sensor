@@ -31,6 +31,13 @@ Environmental readings.
 
 Ambient readings.
 
+# Jupyter Notebook
+
+A sample Jupyter notebook has been included: `Filter-High-Low-Comparison.ipynb`. Sample input data for this notebook 
+is also provided in the following files:
+- `filter-high.csv` - When an air filter was switched to the high mode.
+- `filter-low.csv' - When an air filter was switched to the low mode.
+
 # References:
 * [Adafruit Learning page](https://learn.adafruit.com/pm25-air-quality-sensor)
 * [Adafruit Usage Notes for device, useful details on data output](https://learn.adafruit.com/pm25-air-quality-sensor/usage-notes)
